@@ -1,0 +1,20 @@
+<div class="well">
+
+    <div class="form-group">
+      <label class="control-label" for="formemail">Email</label>
+      <input class="form-control" id="formemail" ng-model="authForm.email" type="email">
+    </div>
+    <div class="form-group">
+      <label class="control-label" for="formpassword">Password</label>
+      <input class="form-control" id="formpassword" ng-model="authForm.password" type="password">
+    </div>
+    <div class="form-group">
+      <label class="checkbox" for="formrememberme">
+        <input id="formrememberme" ng-model="authForm.rememberMe" type="checkbox">Remember me
+      </label>
+    </div>
+    <div class="form-group">
+      <button class="btn btn-primary" ng-click="vm.logIn(authForm)">Log In</button>
+    </div>
+
+</div>
