@@ -1,0 +1,19 @@
+<div class="header">
+  <ul class="nav nav-pills pull-right">
+    <li><a ng-href="{{href('home.userBooks', {userId: user.id})}}">Vocabularies</a></li>
+    <li ng-show="user"><a ui-sref="logOut">Log out</a></li>
+    <li ng-show="!user"><a ui-sref="logIn">Log in</a></li>
+  </ul>
+  <h3 class="text-muted">easycards</h3>
+</div>
+<div>
+  <div class="form-group">
+    <input class="form-control" ng-model="newBook.title" type="text">
+  </div>
+  <button class="btn btn-default" ng-click="addBook()">Add Book</button>
+</div>
+<div ui-view=""></div>
+
+<div class="footer">
+  <p>Easy Cards</p>
+</div>
